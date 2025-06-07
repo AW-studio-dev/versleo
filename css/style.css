@@ -155,7 +155,7 @@ header {
 }
 
 .logo {
-    height: 120px;
+    height: 420px;
     transition: all 0.3s ease;
     position: relative;
     z-index: 2;
@@ -163,12 +163,12 @@ header {
 
 .snake-trail {
     position: absolute;
-    width: 60px;
-    height: 60px;
+    width: 10px;
+    height: 10px;
     background: var(--snake);
     border-radius: 50%;
     z-index: 1;
-    opacity: 0.2;
+    opacity: 0.02;
     animation: snakeTrail 8s infinite linear;
 }
 
