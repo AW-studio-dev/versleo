@@ -429,7 +429,7 @@ body.dark-mode .floating {
 }
 
 .language-bubbles::before {
-    content: 'EN FR ES AR TR BER';
+    content: '-`♡´-';
     position: absolute;
     top: 20%;
     left: 10%;
@@ -439,7 +439,7 @@ body.dark-mode .floating {
 }
 
 .language-bubbles::after {
-    content: 'العربية Français Español English';
+    content: '-`♡´-';
     position: absolute;
     bottom: 30%;
     right: 10%;
