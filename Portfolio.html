@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Portfolio - VERSLEO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <main class="portfolio-page">
+        <section class="page-header">
+            <h1>Our <span class="highlight">Portfolio</span></h1>
+            <p>Explore our translation projects and success stories</p>
+        </section>
+
+        <section class="portfolio-intro">
+            <p>At VERSLEO, we take pride in every project we deliver. Below are some examples of our work across different industries and language pairs. All projects are presented with client confidentiality in mind.</p>
+        </section>
+
+        <section class="portfolio-filters">
+            <div class="filter-options">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="literary">Literary</button>
+                <button class="filter-btn" data-filter="legal">Legal</button>
+                <button class="filter-btn" data-filter="business">Business</button>
+                <button class="filter-btn" data-filter="media">Media</button>
+                <button class="filter-btn" data-filter="technical">Technical</button>
+            </div>
+            <div class="sort-options">
+                <label for="sort">Sort by:</label>
+                <select id="sort">
+                    <option value="recent">Most Recent</option>
+                    <option value="popular">Most Popular</option>
+                    <option value="language">Language</option>
+                    <option value="industry">Industry</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="portfolio-grid">
+            <div class="portfolio-item" data-category="literary" data-language="moroccan-french">
+                <div class="portfolio-image">
+                    <img src="images/portfolio1.jpg" alt="Novel Translation">
+                    <div class="portfolio-overlay">
+                        <h3>Novel Translation</h3>
+                        <p>Moroccan Darija to French</p>
+                        <a href="#" class="view-btn">View Details</a>
+                    </div>
+                </div>
+                <div class="portfolio-info">
+                    <h3>"The Orange Trees of Meknes"</h3>
+                    <p>Translated a contemporary Moroccan novel from Darija to French for international publication.</p>
+                    <div class="portfolio-meta">
+                        <span><i class="fas fa-language"></i> Moroccan → French</span>
+                        <span><i class="fas fa-file-word"></i> 85,000 words</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="legal" data-language="egyptian-english">
+                <div class="portfolio-image">
+                    <img src="images/portfolio2.jpg" alt="Legal Documents">
+                    <div class="portfolio-overlay">
+                        <h3>Legal Documents</h3>
+                        <p>Egyptian Arabic to English</p>
+                        <a href="#" class="view-btn">View Details</a>
+                    </div>
+                </div>
+                <div class="portfolio-info">
+                    <h3>Corporate Contracts</h3>
+                    <p>Translated complex legal agreements for a multinational joint venture in Egypt.</p>
+                    <div class="portfolio-meta">
+                        <span><i class="fas fa-language"></i> Egyptian → English</span>
+                        <span><i class="fas fa-file-word"></i> 120 pages</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="media" data-language="gulf-spanish">
+                <div class="portfolio-image">
+                    <img src="images/portfolio3.jpg" alt="TV Series Subtitles">
+                    <div class="portfolio-overlay">
+                        <h3>TV Series Subtitles</h3>
+                        <p>Gulf Arabic to Spanish</p>
+                        <a href="#" class="view-btn">View Details</a>
+                    </div>
+                </div>
+                <div class="portfolio-info">
+                    <h3>"Desert Shadows" Series</h3>
+                    <p>Created Spanish subtitles for a popular Gulf drama series, adapting cultural references.</p>
+                    <div class="portfolio-meta">
+                        <span><i class="fas fa-language"></i> Gulf → Spanish</span>
+                        <span><i class="fas fa-film"></i> 24 episodes</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="business" data-language="turkish-arabic">
+                <div class="portfolio-image">
+                    <img src="images/portfolio4.jpg" alt="Business Website">
+                    <div class="portfolio-overlay">
+                        <h3>Business Website</h3>
+                        <p>Turkish to Levantine Arabic</p>
+                        <a href="#" class="view-btn">View Details</a>
+                    </div>
+                </div>
+                <div class="portfolio-info">
+                    <h3>E-commerce Platform</h3>
+                    <p>Localized a Turkish e-commerce website for the Syrian and Lebanese markets.</p>
+                    <div class="portfolio-meta">
+                        <span><i class="fas fa-language"></i> Turkish → Levantine</span>
+                        <span><i class="fas fa-globe"></i> 15,000 words</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="technical" data-language="tamazight-french">
+                <div class="portfolio-image">
+                    <img src="images/portfolio5.jpg" alt="Technical Manual">
+                    <div class="portfolio-overlay">
+                        <h3>Technical Manual</h3>
+                        <p>Tamazight to French</p>
+                        <a href="#" class="view-btn">View Details</a>
+                    </div>
+                </div>
+                <div class="portfolio-info">
+                    <h3>Agricultural Equipment Guide</h3>
+                    <p>Translated technical documentation for farming equipment into French from Tamazight.</p>
+                    <div class="portfolio-meta">
+                        <span><i class="fas fa-language"></i> Tamazight → French</span>
+                        <span><i class="fas fa-cogs"></i> 200 pages</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="literary" data-language="arabic-english">
+                <div class="portfolio-image">
+                    <img src="images/portfolio6.jpg" alt="Poetry Collection">
+                    <div class="portfolio-overlay">
+                        <h3>Poetry Collection</h3>
+                        <p>Classical Arabic to English</p>
+                        <a href="#" class="view-btn">View Details</a>
+                    </div>
+                </div>
+                <div class="portfolio-info">
+                    <h3>"Desert Whispers"</h3>
+                    <p>Translated a collection of Arabic poetry while preserving poetic devices and cultural nuances.</p>
+                    <div class="portfolio-meta">
+                        <span><i class="fas fa-language"></i> Arabic → English</span>
+                        <span><i class="fas fa-pen-fancy"></i> 65 poems</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial-highlights">
+            <h2>Client <span class="highlight">Testimonials</span></h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <p>"VERSLEO's translation of our legal documents was impeccable. They handled complex legal terminology in Egyptian Arabic with precision and delivered ahead of schedule."</p>
+                        <div class="client-info">
+                            <img src="images/client1.jpg" alt="Sarah Johnson">
+                            <div>
+                                <h4>Sarah Johnson</h4>
+                                <p>Legal Director, International Law Firm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The cultural adaptation of our marketing materials for the Moroccan market was spot on. VERSLEO understood exactly how to make our message resonate locally."</p>
+                        <div class="client-info">
+                            <img src="images/client2.jpg" alt="Pierre Lefevre">
+                            <div>
+                                <h4>Pierre Lefevre</h4>
+                                <p>Marketing Director, Global Brand</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"As an academic, I needed precise translation of my research from Turkish to Arabic. VERSLEO's translators had the subject matter expertise to handle technical anthropology terms."</p>
+                        <div class="client-info">
+                            <img src="images/client3.jpg" alt="Dr. Aylin Kaya">
+                            <div>
+                                <h4>Dr. Aylin Kaya</h4>
+                                <p>Anthropology Professor, University of Ankara</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+
+        <section class="case-studies">
+            <h2>Featured <span class="highlight">Case Studies</span></h2>
+            <div class="case-study">
+                <div class="case-image">
+                    <img src="images/case1.jpg" alt="Publishing House Case Study">
+                </div>
+                <div class="case-content">
+                    <h3>Publishing House Expansion</h3>
+                    <p class="case-meta">Client: Casablanca Publishing | Category: Literary | Languages: Darija ↔ French</p>
+                    <p>Helped a Moroccan publishing house expand into Francophone markets by translating 12 contemporary novels from Moroccan Darija to French over 18 months. Our team worked closely with authors to preserve narrative voice and cultural references.</p>
+                    <ul>
+                        <li>Increased international readership by 300%</li>
+                        <li>Positive reviews highlighting translation quality</li>
+                        <li>Ongoing partnership for new releases</li>
+                    </ul>
+                    <a href="#" class="btn-secondary">Read Full Case Study</a>
+                </div>
+            </div>
+            <div class="case-study reverse">
+                <div class="case-image">
+                    <img src="images/case2.jpg" alt="Tech Startup Case Study">
+                </div>
+                <div class="case-content">
+                    <h3>Tech Startup Localization</h3>
+                    <p class="case-meta">Client: Dubai Tech Startup | Category: Business | Languages: Gulf Arabic → Spanish/English</p>
+                    <p>Localized a fintech app's interface and documentation for Latin American and European markets. Project included UI translation, cultural adaptation of financial terms, and ongoing updates.</p>
+                    <ul>
+                        <li>Launched in 5 new markets simultaneously</li>
+                        <li>95% positive feedback on language clarity</li>
+                        <li>Reduced customer support queries by 40%</li>
+                    </ul>
+                    <a href="#" class="btn-secondary">Read Full Case Study</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-portfolio">
+            <h2>Ready to Start Your Translation Project?</h2>
+            <p>Whether you need document translation, website localization, or specialized content adaptation, we're here to help.</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn-primary">Get a Free Quote</a>
+                <a href="services.html" class="btn-secondary">Explore Services</a>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Load header and footer
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data)
+            .then(() => {
+                // Set current page as active in navigation
+                const currentPage = 'Portfolio.html';
+                document.querySelectorAll('nav a').forEach(link => {
+                    if (link.getAttribute('href') === currentPage) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        
+        // Portfolio filtering
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Update active filter button
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Filter portfolio items
+                    const filter = this.getAttribute('data-filter');
+                    
+                    portfolioItems.forEach(item => {
+                        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Testimonial slider
+            let currentTestimonial = 0;
+            const testimonials = document.querySelectorAll('.testimonial-card');
+            const dots = document.querySelectorAll('.dot');
+            
+            function showTestimonial(index) {
+                testimonials.forEach(t => t.classList.remove('active'));
+                dots.forEach(d => d.classList.remove('active'));
+                
+                testimonials[index].classList.add('active');
+                dots[index].classList.add('active');
+                currentTestimonial = index;
+            }
+            
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => showTestimonial(index));
+            });
+            
+            // Auto-rotate testimonials
+            setInterval(() => {
+                let nextIndex = (currentTestimonial + 1) % testimonials.length;
+                showTestimonial(nextIndex);
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
