@@ -3,212 +3,299 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Versleo</title>
+    <title>Contact Us - VERSLEO</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Language Selector -->
+    <div id="header"></div>
 
-    <!-- Dark Mode Toggle -->
-    <div class="dark-mode-toggle">
-        <span class="moon">⏾</span>
-        <span class="sun">☀︎</span>
-    </div>
+    <main class="contact-page">
+        <section class="page-header">
+            <h1>Get In <span class="highlight">Touch</span></h1>
+            <p>We're here to help with all your translation needs</p>
+        </section>
 
-    <!-- Mobile Menu Toggle -->
-    <div class="menu-toggle">
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </div>
-
-    <!-- Header -->
-    <header>
-        <div class="logo-container">
-            <img src="images/logo.png" alt="Versleo Logo" class="logo">
-            <div class="snake-trail"></div>
-        </div>
-        <p class="tagline">Purr local.</p>
-    </header>
-
-    <!-- Navigation -->
-    <nav>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="languages.html">Languages</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Contact Hero -->
-    <section class="page-hero contact-hero">
-        <h1 class="page-title">Get in Touch</h1>
-        <p class="page-subtitle">We're here to help with all your translation needs</p>
-        <div class="contact-hero-decoration">
-            <div class="contact-float c1">၊၊||၊</div>
-            <div class="contact-float c2">✆</div>
-            <div class="contact-float c3">ᯓ➤</div>
-            <div class="contact-float c4">-`♡´-</div>
-        </div>
-    </section>
-
-    <!-- Contact Content -->
-    <section class="contact-content-section">
-        <div class="contact-container">
-            <div class="contact-form-container">
+        <section class="contact-container">
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p>Have questions or need a quote? Reach out to us through any of these channels:</p>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Our Office</h3>
+                        <p>123 Language Avenue<br>Casablanca, Morocco</p>
+                    </div>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Phone</h3>
+                        <p>+212 6 12 34 56 78<br>Mon-Fri, 9am-6pm GMT</p>
+                    </div>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Email</h3>
+                        <p>hello@versleo.com<br>response within 24 hours</p>
+                    </div>
+                </div>
+                
+                <div class="social-media">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
                 <h2>Send Us a Message</h2>
-                <form class="contact-form">
+                <form id="contactForm" action="#" method="POST">
                     <div class="form-group">
                         <label for="name">Your Name</label>
                         <input type="text" id="name" name="name" required>
                     </div>
+                    
                     <div class="form-group">
                         <label for="email">Email Address</label>
                         <input type="email" id="email" name="email" required>
                     </div>
+                    
                     <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <select id="subject" name="subject">
-                            <option value="quote">Request a Quote</option>
-                            <option value="general">General Inquiry</option>
-                            <option value="support">Customer Support</option>
-                            <option value="careers">Careers</option>
+                        <label for="phone">Phone Number (optional)</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service">Service Needed</label>
+                        <select id="service" name="service">
+                            <option value="">Select a service</option>
+                            <option value="document">Document Translation</option>
+                            <option value="website">Website Localization</option>
+                            <option value="subtitling">Media Subtitling</option>
+                            <option value="legal">Legal Translation</option>
+                            <option value="business">Business Services</option>
+                            <option value="other">Other</option>
                         </select>
                     </div>
-                    <div class="form-group dual-select">
-                        <div>
-                            <label for="from-lang">From Language</label>
-                            <select id="from-lang" name="from-lang">
-                                <option value="any-arabic">Any Arabic Dialect</option>
-                                <option value="msa">Modern Standard Arabic</option>
+                    
+                    <div class="form-group language-selection">
+                        <label>Language Pair</label>
+                        <div class="language-pair">
+                            <select name="source-language">
+                                <option value="">From</option>
+                                <option value="moroccan">Moroccan Darija</option>
                                 <option value="egyptian">Egyptian Arabic</option>
-                                <option value="levantine">Levantine Arabic</option>
                                 <option value="gulf">Gulf Arabic</option>
-                                <option value="maghrebi">Maghrebi Arabic</option>
-                                <option value="english">English</option>
-                                <option value="french">French</option>
-                                <option value="spanish">Spanish</option>
+                                <option value="levantine">Levantine Arabic</option>
                                 <option value="tamazight">Tamazight</option>
-                                <option value="turkish">Turkish</option>
+                                <option value="other-arabic">Other Arabic Dialect</option>
                             </select>
-                        </div>
-                        <div>
-                            <label for="to-lang">To Language</label>
-                            <select id="to-lang" name="to-lang">
+                            <span>to</span>
+                            <select name="target-language">
+                                <option value="">To</option>
                                 <option value="english">English</option>
                                 <option value="french">French</option>
                                 <option value="spanish">Spanish</option>
-                                <option value="tamazight">Tamazight</option>
                                 <option value="turkish">Turkish</option>
-                                <option value="msa">Modern Standard Arabic</option>
-                                <option value="egyptian">Egyptian Arabic</option>
-                                <option value="levantine">Levantine Arabic</option>
-                                <option value="gulf">Gulf Arabic</option>
-                                <option value="maghrebi">Maghrebi Arabic</option>
+                                <option value="tamazight">Tamazight</option>
+                                <option value="other">Other Language</option>
                             </select>
                         </div>
                     </div>
+                    
                     <div class="form-group">
                         <label for="message">Your Message</label>
-                        <textarea id="message" name="message" rows="6" required></textarea>
+                        <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
-                    <div class="form-group">
-                        <label for="file">Upload File (Optional)</label>
+                    
+                    <div class="form-group file-upload">
+                        <label for="file">Upload Document (optional)</label>
                         <input type="file" id="file" name="file">
+                        <div class="file-upload-style">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <span>Click to upload or drag and drop</span>
+                            <p>Max. file size: 10MB (PDF, DOC, TXT)</p>
+                        </div>
                     </div>
-                    <button type="submit" class="submit-btn">Send Message</button>
+                    
+                    <button type="submit" class="btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
                 </form>
             </div>
-            
-            <div class="contact-info-container">
-                <h2>Contact Information</h2>
-                <div class="contact-info-card">
-                    <div class="contact-method">
-                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-                        <div class="contact-details">
-                            <h3>Email</h3>
-                            <p>hello@versleo.com</p>
-                            <p>support@versleo.com</p>
-                        </div>
+        </section>
+
+        <section class="faq-section">
+            <h2>Frequently Asked <span class="highlight">Questions</span></h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How long does a translation typically take?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Translation time depends on the length and complexity of your document. As a general guideline:</p>
+                        <ul>
+                            <li>Standard documents: 1-2 business days</li>
+                            <li>Legal/technical documents: 2-3 business days</li>
+                            <li>Large projects (10,000+ words): 5-7 business days</li>
+                        </ul>
+                        <p>We also offer expedited services for urgent requests.</p>
                     </div>
-                    <div class="contact-method">
-                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
-                        <div class="contact-details">
-                            <h3>Phone</h3>
-                            <p>+1 (234) 567-8900</p>
-                            <p>Mon-Fri, 9am-5pm EST</p>
-                        </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How do you ensure translation quality?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our quality assurance process involves:</p>
+                        <ol>
+                            <li>Native-speaking translator with subject matter expertise</li>
+                            <li>Dedicated editor reviewing for accuracy and style</li>
+                            <li>Final proofreader checking formatting and consistency</li>
+                            <li>Client feedback incorporation for ongoing projects</li>
+                        </ol>
                     </div>
-                    <div class="contact-method">
-                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-                        <div class="contact-details">
-                            <h3>Office</h3>
-                            <p>123 Translation Street</p>
-                            <p>Language City, LC 10101</p>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can you handle certified translations?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we provide certified translations for legal documents, academic records, and official paperwork. Our certified translations include:</p>
+                        <ul>
+                            <li>Official stamped certificate of accuracy</li>
+                            <li>Translator's signed statement</li>
+                            <li>Notarization available upon request</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What file formats do you accept?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We work with all common file formats including:</p>
+                        <div class="file-formats">
+                            <div>
+                                <h4>Text Documents</h4>
+                                <p>.doc, .docx, .pdf, .txt, .rtf, .odt</p>
+                            </div>
+                            <div>
+                                <h4>Presentations</h4>
+                                <p>.ppt, .pptx, .key</p>
+                            </div>
+                            <div>
+                                <h4>Spreadsheets</h4>
+                                <p>.xls, .xlsx, .csv</p>
+                            </div>
+                            <div>
+                                <h4>Media Files</h4>
+                                <p>.srt, .vtt (for subtitles), .mp3, .wav (for transcription)</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="social-contact">
-                    <h3>Connect With Us</h3>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do you offer discounts for large projects?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we offer volume discounts for large translation projects. Discounts are typically applied for:</p>
+                        <ul>
+                            <li>Projects over 10,000 words</li>
+                            <li>Ongoing translation needs (monthly retainers)</li>
+                            <li>Non-profit organizations</li>
+                        </ul>
+                        <p>Contact us with your project details for a customized quote.</p>
                     </div>
                 </div>
-                
-                <div class="faq-cta">
-                    <h3>Have Questions?</h3>
-                    <p>Check out our <a href="#">FAQ page</a> or contact us directly.</p>
-                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Map Section -->
+        <section class="map-section">
+            <h2>Our <span class="highlight">Location</span></h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.349348144494!2d-7.632787684798288!3d33.59329568073268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cd4778a113b5%3A0x3c3e9b8a7a9b8a7a!2s123%20Language%20Ave%2C%20Casablanca%2C%20Morocco!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-column">
-                <img src="images/logo.png" alt="Versleo Logo" class="footer-logo">
-                <p class="footer-tagline">Purr local.</p>
-                <p>Specializing in Arabic dialect translations with cultural sensitivity and linguistic precision.</p>
-            </div>
-            <div class="footer-column">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="languages.html">Languages</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>Connect</h3>
-                <p><i class="fas fa-envelope"></i> hello@versleo.com</p>
-                <p><i class="fas fa-phone"></i> +1 (234) 567-8900</p>
-                <div class="social-links">
-                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            &copy; 2023 Versleo Translation Agency. All rights reserved.
-        </div>
-    </footer>
+    <div id="footer"></div>
 
     <script src="js/script.js"></script>
+    <script>
+        // Load header and footer
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data)
+            .then(() => {
+                // Set current page as active in navigation
+                const currentPage = 'contact.html';
+                document.querySelectorAll('nav a').forEach(link => {
+                    if (link.getAttribute('href') === currentPage) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        
+        // FAQ functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const answer = question.nextElementSibling;
+                    const icon = question.querySelector('i');
+                    
+                    // Toggle answer visibility
+                    if (answer.style.maxHeight) {
+                        answer.style.maxHeight = null;
+                        icon.classList.remove('fa-chevron-up');
+                        icon.classList.add('fa-chevron-down');
+                    } else {
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        icon.classList.remove('fa-chevron-down');
+                        icon.classList.add('fa-chevron-up');
+                    }
+                    
+                    // Close other open answers
+                    faqQuestions.forEach(q => {
+                        if (q !== question) {
+                            q.nextElementSibling.style.maxHeight = null;
+                            q.querySelector('i').classList.remove('fa-chevron-up');
+                            q.querySelector('i').classList.add('fa-chevron-down');
+                        }
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 </html>
