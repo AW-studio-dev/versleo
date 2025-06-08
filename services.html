@@ -3,237 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services - Versleo</title>
+    <title>Our Services - VERSLEO</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Language Selector -->
+    <div id="header"></div>
 
+    <main class="services-page">
+        <section class="page-header">
+            <h1>Our <span class="highlight">Services</span></h1>
+            <p>Professional translation solutions tailored to your needs</p>
+        </section>
 
-    <!-- Dark Mode Toggle -->
-    <div class="dark-mode-toggle">
-        <span class="moon">⏾</span>
-        <span class="sun">☀︎</span>
-    </div>
+        <section class="service-categories">
+            <div class="service-tabs">
+                <button class="tab-btn active" data-tab="document">Document Translation</button>
+                <button class="tab-btn" data-tab="website">Website Localization</button>
+                <button class="tab-btn" data-tab="media">Media Subtitling</button>
+                <button class="tab-btn" data-tab="legal">Legal Translation</button>
+                <button class="tab-btn" data-tab="business">Business Services</button>
+            </div>
 
-    <!-- Mobile Menu Toggle -->
-    <div class="menu-toggle">
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </div>
-
-    <!-- Header -->
-    <header>
-        <div class="logo-container">
-            <img src="images/logo.png" alt="Versleo Logo" class="logo">
-            <div class="snake-trail"></div>
-        </div>
-        <p class="tagline">Purr local.</p>
-    </header>
-
-    <!-- Navigation -->
-    <nav>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html" class="active">Services</a></li>
-            <li><a href="languages.html">Languages</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Services Hero -->
-    <section class="page-hero">
-        <h1 class="page-title">Our Translation Services</h1>
-        <p class="page-subtitle">Precision, cultural nuance, and linguistic expertise in every project</p>
-        <div class="hero-decoration">
-            <div class="circle c1"></div>
-            <div class="circle c2"></div>
-            <div class="circle c3"></div>
-        </div>
-    </section>
-
-    <!-- Services Grid -->
-    <section class="services-grid-section">
-        <div class="services-grid">
-            <div class="service-card detailed">
-                <div class="service-icon"><i class="fas fa-file-alt"></i></div>
-                <h3>Document Translation</h3>
-                <p>Legal contracts, medical reports, technical manuals, and business documents translated with absolute precision and confidentiality.</p>
+            <div class="service-content active" id="document">
                 <div class="service-details">
-                    <h4>We Specialize In:</h4>
+                    <h2>Document Translation</h2>
+                    <p>We provide accurate and culturally appropriate translations for all types of documents:</p>
                     <ul>
-                        <li>Legal document translation</li>
-                        <li>Medical record translation</li>
-                        <li>Technical documentation</li>
-                        <li>Financial reports</li>
-                        <li>Certified translations</li>
+                        <li><i class="fas fa-check-circle"></i> Academic papers and certificates</li>
+                        <li><i class="fas fa-check-circle"></i> Personal documents (IDs, diplomas, etc.)</li>
+                        <li><i class="fas fa-check-circle"></i> Technical manuals and specifications</li>
+                        <li><i class="fas fa-check-circle"></i> Medical reports and research</li>
+                        <li><i class="fas fa-check-circle"></i> Literary works and creative content</li>
                     </ul>
+                    <div class="service-cta">
+                        <a href="contact.html" class="btn-primary">Request Document Translation</a>
+                    </div>
+                </div>
+                <div class="service-image">
+                    <img src="images/document-translation.svg" alt="Document Translation" class="animated-img">
                 </div>
             </div>
-            
-            <div class="service-card detailed">
-                <div class="service-icon"><i class="fas fa-comments"></i></div>
-                <h3>Interpretation Services</h3>
-                <p>Real-time interpretation for meetings, conferences, court proceedings, and medical consultations.</p>
-                <div class="service-details">
-                    <h4>Interpretation Types:</h4>
-                    <ul>
-                        <li>Simultaneous interpretation</li>
-                        <li>Consecutive interpretation</li>
-                        <li>Whispered interpretation</li>
-                        <li>Remote interpretation</li>
-                        <li>Conference interpretation</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="service-card detailed">
-                <div class="service-icon"><i class="fas fa-film"></i></div>
-                <h3>Media Localization</h3>
-                <p>Subtitling, dubbing, and cultural adaptation for films, TV shows, video games, and digital content.</p>
-                <div class="service-details">
-                    <h4>Media Services:</h4>
-                    <ul>
-                        <li>Subtitling and captioning</li>
-                        <li>Voice-over and dubbing</li>
-                        <li>Transcreation for marketing</li>
-                        <li>Audio description</li>
-                        <li>Cultural consultation</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="service-card detailed">
-                <div class="service-icon"><i class="fas fa-globe"></i></div>
-                <h3>Website & App Localization</h3>
-                <p>Full localization services to make your digital products culturally relevant and linguistically accurate worldwide.</p>
-                <div class="service-details">
-                    <h4>Digital Solutions:</h4>
-                    <ul>
-                        <li>Website localization</li>
-                        <li>Mobile app translation</li>
-                        <li>Software localization</li>
-                        <li>E-commerce adaptation</li>
-                        <li>Multilingual SEO</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="service-card detailed">
-                <div class="service-icon"><i class="fas fa-search"></i></div>
-                <h3>Proofreading & Editing</h3>
-                <p>Polishing existing translations to perfection with native-speaker expertise and cultural sensitivity.</p>
-                <div class="service-details">
-                    <h4>Quality Services:</h4>
-                    <ul>
-                        <li>Translation editing</li>
-                        <li>Cultural adaptation</li>
-                        <li>Terminology consistency</li>
-                        <li>Style guide adherence</li>
-                        <li>Quality assurance</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="service-card detailed">
-                <div class="service-icon"><i class="fas fa-industry"></i></div>
-                <h3>Specialized Translations</h3>
-                <p>Industry-specific translations by subject matter experts in legal, medical, technical, and academic fields.</p>
-                <div class="service-details">
-                    <h4>Specializations:</h4>
-                    <ul>
-                        <li>Legal translation</li>
-                        <li>Medical translation</li>
-                        <li>Technical translation</li>
-                        <li>Academic translation</li>
-                        <li>Literary translation</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Process Section -->
-    <section class="process-section">
-        <h2 class="section-title">Our Translation Process</h2>
-        <div class="process-steps">
-            <div class="process-step">
-                <div class="step-number">1</div>
-                <h3>Project Analysis</h3>
-                <p>We assess your needs, target audience, and content specifics.</p>
-            </div>
-            <div class="process-step">
-                <div class="step-number">2</div>
-                <h3>Team Assignment</h3>
-                <p>The perfect linguist team is selected for your project.</p>
-            </div>
-            <div class="process-step">
-                <div class="step-number">3</div>
-                <h3>Translation</h3>
-                <p>Native-speaking experts translate your content.</p>
-            </div>
-            <div class="process-step">
-                <div class="step-number">4</div>
-                <h3>Quality Assurance</h3>
-                <p>Multiple rounds of editing and proofreading.</p>
-            </div>
-            <div class="process-step">
-                <div class="step-number">5</div>
-                <h3>Delivery</h3>
-                <p>Final files delivered in your preferred format.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="cta-content">
-            <h2>Ready to Get Started?</h2>
-            <p>Tell us about your project and we'll provide a customized quote.</p>
-            <a href="contact.html" class="cta-button">Request a Quote</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-column">
-                <img src="images/logo.png" alt="Versleo Logo" class="footer-logo">
-                <p class="footer-tagline">Purr local.</p>
-                <p>Specializing in Arabic dialect translations with cultural sensitivity and linguistic precision.</p>
-            </div>
-            <div class="footer-column">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="languages.html">Languages</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>Connect</h3>
-                <p><i class="fas fa-envelope"></i> hello@versleo.com</p>
-                <p><i class="fas fa-phone"></i> +1 (234) 567-8900</p>
-                <div class="social-links">
-                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <div class="service-content" id="website">
+                <div class="service-details">
+                    <h2>Website Localization</h2>
+                    <p>Expand your global reach with perfectly localized website content:</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Full website translation</li>
+                        <li><i class="fas fa-check-circle"></i> Cultural adaptation</li>
+                        <li><i class="fas fa-check-circle"></i> SEO optimization for target languages</li>
+                        <li><i class="fas fa-check-circle"></i> Multilingual CMS integration</li>
+                        <li><i class="fas fa-check-circle"></i> Continuous content updates</li>
+                    </ul>
+                    <div class="service-cta">
+                        <a href="contact.html" class="btn-primary">Localize Your Website</a>
+                    </div>
+                </div>
+                <div class="service-image">
+                    <img src="images/website-localization.svg" alt="Website Localization" class="animated-img">
                 </div>
             </div>
-        </div>
-        <div class="copyright">
-            &copy; 2023 Versleo Translation Agency. All rights reserved.
-        </div>
-    </footer>
+
+            <div class="service-content" id="media">
+                <div class="service-details">
+                    <h2>Media Subtitling</h2>
+                    <p>Professional subtitling and captioning services for all media formats:</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Movie and TV show subtitles</li>
+                        <li><i class="fas fa-check-circle"></i> Corporate videos and presentations</li>
+                        <li><i class="fas fa-check-circle"></i> E-learning content</li>
+                        <li><i class="fas fa-check-circle"></i> YouTube and social media videos</li>
+                        <li><i class="fas fa-check-circle"></i> Closed captioning for accessibility</li>
+                    </ul>
+                    <div class="service-cta">
+                        <a href="contact.html" class="btn-primary">Get Subtitles Now</a>
+                    </div>
+                </div>
+                <div class="service-image">
+                    <img src="media-subtitling.svg" alt="Media Subtitling" class="animated-img">
+                </div>
+            </div>
+
+            <!-- Other service tabs content would follow the same pattern -->
+        </section>
+
+        <section class="process">
+            <h2>Our <span class="highlight">Process</span></h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Submit Your Request</h3>
+                    <p>Send us your documents or content with any specific requirements.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Project Assessment</h3>
+                    <p>We analyze your needs and provide a quote with timeline.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Translation</h3>
+                    <p>Native linguists work on your project with subject matter expertise.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Quality Assurance</h3>
+                    <p>Editors review for accuracy, consistency, and cultural appropriateness.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <h3>Delivery</h3>
+                    <p>Receive your translated content in the requested format.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
 
     <script src="js/script.js"></script>
+    <script>
+        // Load header and footer
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data)
+            .then(() => {
+                // Set current page as active in navigation
+                const currentPage = 'services.html';
+                document.querySelectorAll('nav a').forEach(link => {
+                    if (link.getAttribute('href') === currentPage) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        
+        // Service tabs functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons and content
+                    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                    document.querySelectorAll('.service-content').forEach(c => c.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Show corresponding content
+                    const tabId = this.getAttribute('data-tab');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+        });
+    </script>
 </body>
 </html>
